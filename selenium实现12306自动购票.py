@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException, ElementNotVisible
 import csv
 
 
-#这里driver放在类外面的原因是因为防止main函数执行完毕后会消除内存中的临时变量，导致类对象ribber被删除，造成网页自动关闭
+# driver要放在外面，防止因为main函数执行完毕后消除内存中的临时变量，而导致类对象ribber被删除，造成网页自动关闭
 driver = webdriver.Chrome(executable_path="D:\driver\chromedriver.exe")  # 谷歌浏览器
 # driver = webdriver.Firefox(executable_path="D:\driver\geckodriver.exe")  # 火狐浏览器
 # driver = webdriver.Edge(executable_path="D:\driver\msedgedriver.exe")  # Microsoft Edge浏览器
