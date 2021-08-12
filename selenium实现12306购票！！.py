@@ -210,7 +210,7 @@ def main():
     from_station = input("请输入出发地： ")
     to_station = input("请输入目的地： ")
     start_time = input("请输入出发时间（格式：年-月-日）：")
-    ribber = TrainRibber(from_station, to_station, start_time, {"K1064": ["O", "M", "1"]}, {"李琪旺(学生)":["1", "3"], "李含婷(学生)": ["1", "3"]})
+    ribber = TrainRibber(from_station, to_station, start_time, {"K1064": ["O", "M", "1"]}, {"老李(学生)":["1", "3"], "小李(学生)": ["1", "3"]})
     ribber.run()
 
 if __name__ == '__main__':
